@@ -1,3 +1,8 @@
+import logoPicaras from "../images/clients/Logo-Picaras.png"
+import logoPacasmayo from "../images/clients/Logo-Pacasmayo.png"
+import logoMenorca from "../images/clients/Logo-Menorca.png"
+import logoEtex from "../images/clients/Logo-Etex.png"
+import logoCosta from "../images/clients/Logo-Costa.png"
 export const TodoCOmpon = () => {
   return (
     <div className="relative" id="home">
@@ -64,16 +69,9 @@ export const TodoCOmpon = () => {
           </div>
           <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5">
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0 cursor-pointer">
-              {/* <img
-                src="../src/images/clients/microsoft.svg"
-                className="h-12 w-auto mx-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              /> */}
+              
               <img
-                src="../src/images/clients/Logo-Picaras.png"
+                src={logoPicaras}
                 className="h-[80px] w-auto mx-auto"
                 loading="lazy"
                 alt="client logo"
@@ -83,16 +81,9 @@ export const TodoCOmpon = () => {
 
             </div>
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
-              {/* <img
-                src="./src/images/clients/airbnb.svg"
-                className="h-12 w-auto mx-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              /> */}
+              
               <img
-                src="./src/images/clients/Logo-Pacasmayo.png"
+                src={logoPacasmayo}
                 className=" w-auto mx-auto"
                 loading="lazy"
                 alt="client logo"
@@ -101,16 +92,9 @@ export const TodoCOmpon = () => {
               />
             </div>
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
-              {/* <img
-                src="./src/images/clients/google.svg"
-                className="h-9 w-auto m-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              /> */}
+              
               <img
-                src="./src/images/clients/Logo-Menorca.png"
+                src={logoMenorca}
                 className="h-9 w-auto m-auto"
                 loading="lazy"
                 alt="client logo"
@@ -119,16 +103,9 @@ export const TodoCOmpon = () => {
               />
             </div>
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0 cursor-pointer flex items-center">
-              {/* <img
-                src="./src/images/clients/ge.svg"
-                className="h-12 w-auto mx-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              /> */}
+             
               <img
-                src="./src/images/clients/Logo-etex.png"
+                src={logoEtex}
                 className="md:h-12 w-auto mx-auto"
                 loading="lazy"
                 alt="client logo"
@@ -136,17 +113,10 @@ export const TodoCOmpon = () => {
                 height=""
               />
             </div>
-            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer flex items-center">
-             {/*  <img
-                src="./src/images/clients/netflix.svg"
-                className="h-8 w-auto m-auto"
-                loading="lazy"
-                alt="client logo"
-                width=""
-                height=""
-              /> */}
+            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer items-center">
+             
                <img
-                src="./src/images/clients/Logo-Costa.png"
+                src={logoCosta}
                 className="h-[60px] w-auto m-auto"
                 loading="lazy"
                 alt="client logo"
