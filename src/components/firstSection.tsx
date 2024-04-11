@@ -1,9 +1,17 @@
-import logoPicaras from "../images/clients/Logo-Picaras.png"
-import logoPacasmayo from "../images/clients/Logo-Pacasmayo.png"
-import logoMenorca from "../images/clients/Logo-Menorca.png"
-import logoEtex from "../images/clients/Logo-Etex.png"
-import logoCosta from "../images/clients/Logo-Costa.png"
+import logoPicaras from "../images/clients/Logo-Picaras.png";
+import logoPacasmayo from "../images/clients/Logo-Pacasmayo.png";
+import logoMenorca from "../images/clients/Logo-Menorca.png";
+import logoEtex from "../images/clients/Logo-Etex.png";
+import logoCosta from "../images/clients/Logo-Costa.png";
 export const TodoCOmpon = () => {
+  const downloadCurriculum = () => {
+    const aTag = document.createElement("a");
+    aTag.href = "/curriculum_vitae.pdf";
+    aTag.setAttribute("download", "curriculum_vitae.pdf");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
     <div className="relative" id="home">
       <div
@@ -17,28 +25,31 @@ export const TodoCOmpon = () => {
         <div className="relative pt-36 ml-auto">
           <div className="lg:w-2/3 text-center mx-auto">
             <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
-            Transformación Digital Potenciada
+              Transformación Digital Potenciada
               {/* <span className="text-primary dark:text-white">
                 reimagination.
               </span> */}
             </h1>
             <p className="mt-8 text-gray-700 dark:text-gray-300">
-              Soy un desarrollador full stack apasionado por crear soluciones digitales
-              innovadoras para clientes diversos. Desde startups hasta grandes
-              empresas, mi enfoque versátil y colaborativo garantiza resultados
-              sobresalientes. ¿Listo para llevar tu proyecto al siguiente nivel?
+              Soy un desarrollador full stack apasionado por crear soluciones
+              digitales innovadoras para clientes diversos. Desde startups hasta
+              grandes empresas, mi enfoque versátil y colaborativo garantiza
+              resultados sobresalientes. ¿Listo para llevar tu proyecto al
+              siguiente nivel?
             </p>
             <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
               <a
                 href="#"
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                onClick={downloadCurriculum}
               >
                 <span className="relative text-base font-semibold text-white">
                   Descargar CV
                 </span>
               </a>
               <a
-                href="#"
+                href="https://github.com/RONALDOJUNIORCURILLAVARGAS"
+                target="_blank"
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-primary dark:text-white">
@@ -69,7 +80,6 @@ export const TodoCOmpon = () => {
           </div>
           <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5">
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0 cursor-pointer">
-              
               <img
                 src={logoPicaras}
                 className="h-[80px] w-auto mx-auto"
@@ -77,11 +87,9 @@ export const TodoCOmpon = () => {
                 alt="client logo"
                 width=""
                 height=""
-              /> 
-
+              />
             </div>
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
-              
               <img
                 src={logoPacasmayo}
                 className=" w-auto mx-auto"
@@ -92,7 +100,6 @@ export const TodoCOmpon = () => {
               />
             </div>
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
-              
               <img
                 src={logoMenorca}
                 className="h-9 w-auto m-auto"
@@ -103,7 +110,6 @@ export const TodoCOmpon = () => {
               />
             </div>
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0 cursor-pointer flex items-center">
-             
               <img
                 src={logoEtex}
                 className="md:h-12 w-auto mx-auto"
@@ -114,8 +120,7 @@ export const TodoCOmpon = () => {
               />
             </div>
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer items-center">
-             
-               <img
+              <img
                 src={logoCosta}
                 className="h-[60px] w-auto m-auto"
                 loading="lazy"
