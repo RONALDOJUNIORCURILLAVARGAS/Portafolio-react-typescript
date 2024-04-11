@@ -89,10 +89,10 @@ export const TodoCOmpon = () => {
                 height=""
               />
             </div>
-            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
+            <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center ">
               <img
                 src={logoPacasmayo}
-                className=" w-auto mx-auto"
+                className=" w-auto mx-auto image-png-filter-shadow "
                 loading="lazy"
                 alt="client logo"
                 width=""
@@ -102,7 +102,7 @@ export const TodoCOmpon = () => {
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer  items-center">
               <img
                 src={logoMenorca}
-                className="h-9 w-auto m-auto"
+                className="h-14 w-auto m-auto image-png-filter-shadow"
                 loading="lazy"
                 alt="client logo"
                 width=""
@@ -112,7 +112,7 @@ export const TodoCOmpon = () => {
             <div className="p-4 grayscale transition duration-200 hover:grayscale-0 cursor-pointer flex items-center">
               <img
                 src={logoEtex}
-                className="md:h-12 w-auto mx-auto"
+                className="md:h-12 w-auto mx-auto image-png-filter-shadow"
                 loading="lazy"
                 alt="client logo"
                 width=""
@@ -122,7 +122,7 @@ export const TodoCOmpon = () => {
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer items-center">
               <img
                 src={logoCosta}
-                className="h-[60px] w-auto m-auto"
+                className="h-[60px] w-auto m-auto image-png-filter-shadow"
                 loading="lazy"
                 alt="client logo"
                 width=""
