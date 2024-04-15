@@ -122,7 +122,7 @@ export const TodoCOmpon = () => {
             <div className="p-4 flex grayscale transition duration-200 hover:grayscale-0 cursor-pointer items-center">
               <img
                 src={logoCosta}
-                className="h-[60px] w-auto m-auto image-png-filter-shadow"
+                className="md:h-[60px] w-auto m-auto image-png-filter-shadow"
                 loading="lazy"
                 alt="client logo"
                 width=""
