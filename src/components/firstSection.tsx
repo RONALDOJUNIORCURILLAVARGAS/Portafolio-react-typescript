@@ -3,6 +3,7 @@ import logoPacasmayo from "../images/clients/Logo-Pacasmayo.png";
 import logoMenorca from "../images/clients/Logo-Menorca.png";
 import logoEtex from "../images/clients/Logo-Etex.png";
 import logoCosta from "../images/clients/Logo-Costa.png";
+import { ProjectsSection } from "./ProjectsSection";
 export const TodoCOmpon = () => {
   const downloadCurriculum = () => {
     const aTag = document.createElement("a");
@@ -141,6 +142,7 @@ export const TodoCOmpon = () => {
             </div> */}
           </div>
         </div>
+        <ProjectsSection/>
       </div>
     </div>
   );

@@ -1,6 +1,13 @@
-
+import { useRef, useState } from "react";
 
 export const Header = () => {
+  const [showMenu, setshowMenu] = useState(false);
+  const buttonMenu = useRef<HTMLLabelElement | null>(null);
+  const ChangeShowMenu = () => {
+    console.log('cambiando de menu')
+    buttonMenu.current?.click();
+    //setshowMenu(!showMenu);
+  };
   return (
     <>
       <header>
@@ -36,6 +43,7 @@ export const Header = () => {
                     aria-label="humburger"
                     id="hamburger"
                     className="relative  p-6 -mr-6"
+                    ref={buttonMenu}
                   >
                     <div
                       aria-hidden="true"
@@ -80,8 +88,9 @@ export const Header = () => {
                     </li>
                     <li>
                       <a
-                        href="#testimonials"
+                        href="#projects"
                         className="block md:px-4 transition hover:text-primary"
+                        onClick={ChangeShowMenu}
                       >
                         <span>Projects</span>
                       </a>
