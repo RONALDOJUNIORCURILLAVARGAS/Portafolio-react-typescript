@@ -1,7 +1,7 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export const Header = () => {
-  const [showMenu, setshowMenu] = useState(false);
+
   const buttonMenu = useRef<HTMLLabelElement | null>(null);
   const ChangeShowMenu = () => {
     console.log('cambiando de menu')
